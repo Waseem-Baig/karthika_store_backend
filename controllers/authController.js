@@ -19,8 +19,9 @@ const sendTokenResponse = (user, statusCode, res) => {
       Date.now() + 30 * 24 * 60 * 60 * 1000 // 30 days
     ),
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production", // Use secure cookies in production
-    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production", // Only require HTTPS in production
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "lax", // Use 'none' for cross-origin in production
+    domain: process.env.COOKIE_DOMAIN || undefined, // Allow subdomain cookies
   };
 
   res
