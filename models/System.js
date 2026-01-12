@@ -81,6 +81,14 @@ const systemSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
+    },
   },
   {
     timestamps: true,

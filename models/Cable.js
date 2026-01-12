@@ -29,10 +29,9 @@ const cableSchema = new mongoose.Schema(
         type: String,
       },
     ],
-    badge: {
+    model: {
       type: String,
-      enum: ["bestseller", "new", "featured", ""],
-      default: "",
+      trim: true,
     },
     category: {
       type: String,
@@ -70,6 +69,14 @@ const cableSchema = new mongoose.Schema(
     discount: {
       type: Number,
       default: 0,
+    },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
     },
   },
   {

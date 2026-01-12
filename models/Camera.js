@@ -43,10 +43,9 @@ const cameraSchema = new mongoose.Schema(
       type: [String],
       default: [],
     },
-    badge: {
+    model: {
       type: String,
-      enum: ["Bestseller", "AI", "Premium", "Budget", "New", "Popular", ""],
-      default: "",
+      trim: true,
     },
     description: {
       type: String,
@@ -70,6 +69,14 @@ const cameraSchema = new mongoose.Schema(
       type: String,
       enum: ["bullet", "dome", "ptz", "fisheye", "other"],
       default: "other",
+    },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
     },
   },
   {

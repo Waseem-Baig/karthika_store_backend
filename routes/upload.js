@@ -1,18 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const upload = require("../middleware/upload");
+const { upload, uploadDocument, uploadAny } = require("../middleware/upload");
 const { protect, authorize } = require("../middleware/auth");
 const fs = require("fs");
 const path = require("path");
 
-// @desc    Upload single image
+// @desc    Upload single file (image or document)
 // @route   POST /api/upload
 // @access  Private/Admin
 router.post(
   "/",
   protect,
   authorize("admin"),
-  upload.single("image"),
+  uploadAny.single("file"),
   (req, res) => {
     try {
       if (!req.file) {
@@ -22,12 +22,13 @@ router.post(
         });
       }
 
-      // Return the file URL
-      const fileUrl = `/uploads/${req.file.filename}`;
+      // Return the file URL with /api prefix
+      const fileUrl = `/api/uploads/${req.file.filename}`;
 
       res.status(200).json({
         success: true,
         message: "File uploaded successfully",
+        fileUrl: fileUrl,
         data: {
           filename: req.file.filename,
           url: fileUrl,

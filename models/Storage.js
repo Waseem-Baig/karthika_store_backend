@@ -51,11 +51,6 @@ const storageSchema = new mongoose.Schema(
         type: String,
       },
     ],
-    badge: {
-      type: String,
-      enum: ["", "bestseller", "new", "featured"],
-      default: "",
-    },
     specifications: {
       type: {
         capacity: String,
@@ -76,6 +71,14 @@ const storageSchema = new mongoose.Schema(
       type: String,
       required: true,
       enum: ["hdd", "ssd", "microsd", "portable", "accessories"],
+    },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
     },
   },
   {

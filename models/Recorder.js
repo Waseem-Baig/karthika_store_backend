@@ -54,9 +54,8 @@ const recorderSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    badge: {
+    model: {
       type: String,
-      default: "",
       trim: true,
     },
     rating: {
@@ -73,6 +72,14 @@ const recorderSchema = new mongoose.Schema(
     inStock: {
       type: Boolean,
       default: true,
+    },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
     },
   },
   {

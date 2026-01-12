@@ -43,10 +43,9 @@ const networkingSchema = new mongoose.Schema(
         type: String,
       },
     ],
-    badge: {
+    model: {
       type: String,
-      enum: ["", "bestseller", "new", "featured"],
-      default: "",
+      trim: true,
     },
     specifications: {
       ports: String,
@@ -64,6 +63,14 @@ const networkingSchema = new mongoose.Schema(
       type: String,
       required: true,
       enum: ["poe-switch", "injector", "extender", "splitter", "accessories"],
+    },
+    pdfUrl: {
+      type: String,
+      default: "",
+    },
+    pdfFileName: {
+      type: String,
+      default: "",
     },
   },
   {

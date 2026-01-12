@@ -73,6 +73,7 @@ const cartRoutes = require("./routes/cartRoutes");
 const installationRequestRoutes = require("./routes/installationRequests");
 const quoteRequestRoutes = require("./routes/quoteRequests");
 const uploadRoutes = require("./routes/upload");
+const downloadRoutes = require("./routes/downloadRoutes");
 
 // Use routes here
 app.use("/api/auth", authRoutes);
@@ -87,6 +88,7 @@ app.use("/api/cart", cartRoutes);
 app.use("/api/installation-requests", installationRequestRoutes);
 app.use("/api/quote-requests", quoteRequestRoutes);
 app.use("/api/upload", uploadRoutes);
+app.use("/api/downloads", downloadRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {

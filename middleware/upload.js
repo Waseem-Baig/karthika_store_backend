@@ -43,7 +43,28 @@ const fileFilter = (req, file, cb) => {
   }
 };
 
-// Configure multer
+// File filter for documents (PDFs, executables, APKs, etc.)
+const documentFilter = (req, file, cb) => {
+  // Allowed extensions for documents
+  const allowedTypes = /pdf|apk|exe|zip|rar|dmg|pkg|deb|rpm/;
+
+  // Check extension
+  const extname = allowedTypes.test(
+    path.extname(file.originalname).toLowerCase()
+  );
+
+  if (extname) {
+    return cb(null, true);
+  } else {
+    cb(
+      new Error(
+        "Only document files (pdf, apk, exe, zip, rar, dmg, pkg, deb, rpm) are allowed!"
+      )
+    );
+  }
+};
+
+// Configure multer for images
 const upload = multer({
   storage: storage,
   limits: {
@@ -52,4 +73,39 @@ const upload = multer({
   fileFilter: fileFilter,
 });
 
-module.exports = upload;
+// Configure multer for documents (larger file size)
+const uploadDocument = multer({
+  storage: storage,
+  limits: {
+    fileSize: 150 * 1024 * 1024, // 150MB limit for documents
+  },
+  fileFilter: documentFilter,
+});
+
+// Configure multer for any file type (images + documents)
+const uploadAny = multer({
+  storage: storage,
+  limits: {
+    fileSize: 150 * 1024 * 1024, // 150MB limit
+  },
+  fileFilter: (req, file, cb) => {
+    // Allow both images and documents
+    const allowedTypes =
+      /jpeg|jpg|png|gif|webp|pdf|apk|exe|zip|rar|dmg|pkg|deb|rpm/;
+    const extname = allowedTypes.test(
+      path.extname(file.originalname).toLowerCase()
+    );
+
+    if (extname) {
+      return cb(null, true);
+    } else {
+      cb(new Error("File type not allowed"));
+    }
+  },
+});
+
+module.exports = {
+  upload,
+  uploadDocument,
+  uploadAny,
+};
