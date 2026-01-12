@@ -14,6 +14,7 @@ const app = express();
 app.use(
   helmet({
     crossOriginResourcePolicy: { policy: "cross-origin" },
+    crossOriginEmbedderPolicy: false,
   })
 ); // Security headers
 app.use(
