@@ -41,11 +41,15 @@ const upload = multer({
 // Get all storage products with optional filters
 exports.getStorageProducts = async (req, res) => {
   try {
-    const { brand, inStock, minPrice, maxPrice } = req.query;
+    const { brand, category, inStock, minPrice, maxPrice } = req.query;
     let query = {};
 
     if (brand) {
       query.brand = brand;
+    }
+
+    if (category) {
+      query.category = category;
     }
 
     if (inStock !== undefined) {

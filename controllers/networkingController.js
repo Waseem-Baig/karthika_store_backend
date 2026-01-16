@@ -41,11 +41,15 @@ const upload = multer({
 // Get all networking products with optional filters
 exports.getNetworkingProducts = async (req, res) => {
   try {
-    const { brand, inStock, minPrice, maxPrice } = req.query;
+    const { brand, category, inStock, minPrice, maxPrice } = req.query;
     let query = {};
 
     if (brand) {
       query.brand = brand;
+    }
+
+    if (category) {
+      query.category = category;
     }
 
     if (inStock !== undefined) {

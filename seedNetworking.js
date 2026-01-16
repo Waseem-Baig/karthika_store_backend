@@ -31,6 +31,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Ubiquiti",
+    category: "PoE Switch",
   },
   {
     name: "16-Port PoE Switch (250W)",
@@ -60,6 +61,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Cisco",
+    category: "PoE Switch",
   },
   {
     name: "24-Port PoE Switch (400W)",
@@ -89,6 +91,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Netgear",
+    category: "PoE Switch",
   },
   {
     name: "5-Port Desktop PoE Switch (60W)",
@@ -118,6 +121,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Tenda",
+    category: "PoE Switch",
   },
   {
     name: "PoE Injector Single Port (30W)",
@@ -147,6 +151,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Ubiquiti",
+    category: "Accessories",
   },
   {
     name: "PoE Extender (100m range)",
@@ -176,6 +181,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "D-Link",
+    category: "Accessories",
   },
   {
     name: "4-Port PoE Injector Hub (120W)",
@@ -205,6 +211,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "TRENDnet",
+    category: "Accessories",
   },
   {
     name: "PoE Splitter (5V/12V)",
@@ -233,6 +240,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "TP-Link",
+    category: "Accessories",
   },
   {
     name: "Outdoor PoE Switch 8-Port (150W)",
@@ -261,6 +269,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Hikvision",
+    category: "PoE Switch",
   },
   {
     name: "PoE Tester & Detector",
@@ -290,6 +299,7 @@ const networkingProducts = [
     },
     inStock: true,
     brand: "Klein Tools",
+    category: "Accessories",
   },
 ];
 

@@ -36,6 +36,7 @@ const cameras = [
     inStock: true,
     warranty: "2 Years",
     brand: "Hikvision",
+    category: "Network Cameras",
   },
   {
     name: "4MP AI Dome Camera",
@@ -69,6 +70,7 @@ const cameras = [
     inStock: true,
     warranty: "2 Years",
     brand: "Dahua",
+    category: "Network Cameras",
   },
   {
     name: "5MP PTZ IP Camera",
@@ -102,6 +104,7 @@ const cameras = [
     inStock: true,
     warranty: "3 Years",
     brand: "Hikvision",
+    category: "PTZ Cameras",
   },
   {
     name: "2MP HD Bullet Camera",
@@ -135,6 +138,7 @@ const cameras = [
     inStock: true,
     warranty: "1 Year",
     brand: "CP Plus",
+    category: "Analog Cameras",
   },
   {
     name: "4K Fisheye 360° Camera",
@@ -163,6 +167,7 @@ const cameras = [
     inStock: true,
     warranty: "2 Years",
     brand: "Dahua",
+    category: "Network Cameras",
   },
   {
     name: "4MP Outdoor Dome Camera",
@@ -191,6 +196,7 @@ const cameras = [
     inStock: true,
     warranty: "2 Years",
     brand: "CP Plus",
+    category: "Network Cameras",
   },
 ];
 

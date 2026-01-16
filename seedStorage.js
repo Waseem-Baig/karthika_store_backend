@@ -8,6 +8,7 @@ const storageProducts = [
     description:
       "WD Purple / Seagate SkyHawk series - Perfect for small to medium CCTV systems with 24×7 recording",
     brand: "WD/Seagate",
+    category: "HDDs",
     model: "Purple/SkyHawk",
     price: 3499,
     mrp: 4499,
@@ -39,6 +40,7 @@ const storageProducts = [
     description:
       "Enterprise-grade storage designed for DVR/NVR systems with multiple camera streams",
     brand: "WD/Seagate",
+    category: "HDDs",
     model: "Purple/SkyHawk",
     price: 5999,
     mrp: 7499,
@@ -70,6 +72,7 @@ const storageProducts = [
     description:
       "High-capacity storage solution for large surveillance systems with extended retention",
     brand: "WD/Seagate",
+    category: "HDDs",
     model: "Purple/SkyHawk",
     price: 9999,
     mrp: 12999,
@@ -101,6 +104,7 @@ const storageProducts = [
     description:
       "Professional storage solution for enterprise surveillance deployments",
     brand: "WD/Seagate",
+    category: "HDDs",
     model: "Purple/SkyHawk",
     price: 14999,
     mrp: 18999,
@@ -132,6 +136,7 @@ const storageProducts = [
     description:
       "Maximum capacity enterprise storage for large-scale surveillance installations",
     brand: "WD/Seagate",
+    category: "HDDs",
     model: "Purple/SkyHawk Pro",
     price: 19999,
     mrp: 25999,
@@ -163,6 +168,7 @@ const storageProducts = [
     description:
       "High-endurance microSD designed for continuous recording in IP cameras",
     brand: "Samsung/SanDisk",
+    category: "MicroSD Cards",
     model: "Pro Endurance",
     price: 2499,
     mrp: 3499,
@@ -194,6 +200,7 @@ const storageProducts = [
     description:
       "Reliable microSD for IP cameras with edge recording capability",
     brand: "Samsung/SanDisk",
+    category: "MicroSD Cards",
     model: "Pro Endurance",
     price: 1499,
     mrp: 1999,
@@ -224,6 +231,7 @@ const storageProducts = [
     name: "1TB Portable SSD",
     description: "Fast portable SSD for quick backup and footage transfer",
     brand: "Samsung/SanDisk",
+    category: "Portable Storage",
     model: "T7/Extreme Pro",
     price: 8999,
     mrp: 11999,
@@ -255,6 +263,7 @@ const storageProducts = [
     description:
       'Universal mounting brackets and screws for 3.5" HDDs in NVR/DVR',
     brand: "Generic",
+    category: "Accessories",
     model: "Universal",
     price: 299,
     mrp: 499,
@@ -285,6 +294,7 @@ const storageProducts = [
     name: "SATA Data Cable (18 inch) - Pack of 2",
     description: "High-quality SATA III cables for connecting HDDs to NVR/DVR",
     brand: "Generic",
+    category: "Accessories",
     model: "SATA III",
     price: 199,
     mrp: 349,

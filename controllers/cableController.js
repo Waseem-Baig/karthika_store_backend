@@ -41,13 +41,18 @@ const upload = multer({
 // @access  Public
 const getCables = async (req, res) => {
   try {
-    const { brand, minPrice, maxPrice, inStock, search } = req.query;
+    const { brand, category, minPrice, maxPrice, inStock, search } = req.query;
 
     let query = {};
 
     // Filter by brand
     if (brand) {
       query.brand = brand;
+    }
+
+    // Filter by category
+    if (category) {
+      query.category = category;
     }
 
     // Filter by price range
