@@ -5,13 +5,13 @@ const Camera = require("../models/Camera");
 // @access  Public
 exports.getCameras = async (req, res) => {
   try {
-    const { category, minPrice, maxPrice, inStock, sort } = req.query;
+    const { brand, minPrice, maxPrice, inStock, sort } = req.query;
 
     // Build query
     let query = {};
 
-    if (category) {
-      query.category = category;
+    if (brand) {
+      query.brand = brand;
     }
 
     if (minPrice || maxPrice) {

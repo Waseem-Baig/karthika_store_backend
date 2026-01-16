@@ -33,17 +33,10 @@ const cableSchema = new mongoose.Schema(
       type: String,
       trim: true,
     },
-    category: {
+    brand: {
       type: String,
-      enum: [
-        "coaxial",
-        "ethernet",
-        "power",
-        "connectors",
-        "tools",
-        "accessories",
-      ],
-      required: true,
+      required: [true, "Please add a brand name"],
+      trim: true,
     },
     specifications: {
       length: String,

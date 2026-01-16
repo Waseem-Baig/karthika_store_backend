@@ -65,10 +65,10 @@ const cameraSchema = new mongoose.Schema(
       type: String,
       default: "1 Year",
     },
-    category: {
+    brand: {
       type: String,
-      enum: ["bullet", "dome", "ptz", "fisheye", "other"],
-      default: "other",
+      required: [true, "Please add a brand name"],
+      trim: true,
     },
     pdfUrl: {
       type: String,

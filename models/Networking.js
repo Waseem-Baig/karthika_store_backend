@@ -59,10 +59,10 @@ const networkingSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
-    category: {
+    brand: {
       type: String,
-      required: true,
-      enum: ["poe-switch", "injector", "extender", "splitter", "accessories"],
+      required: [true, "Please add a brand name"],
+      trim: true,
     },
     pdfUrl: {
       type: String,

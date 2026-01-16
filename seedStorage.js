@@ -33,7 +33,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "hdd",
   },
   {
     name: "2TB Surveillance HDD",
@@ -65,7 +64,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "hdd",
   },
   {
     name: "4TB Surveillance HDD",
@@ -97,7 +95,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "hdd",
   },
   {
     name: "6TB Surveillance HDD",
@@ -129,7 +126,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "hdd",
   },
   {
     name: "8TB Surveillance HDD",
@@ -161,7 +157,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "hdd",
   },
   {
     name: "256GB MicroSD Card (High Endurance)",
@@ -193,7 +188,6 @@ const storageProducts = [
       warranty: "10 Years",
     },
     inStock: true,
-    category: "microsd",
   },
   {
     name: "128GB MicroSD Card (High Endurance)",
@@ -225,7 +219,6 @@ const storageProducts = [
       warranty: "5 Years",
     },
     inStock: true,
-    category: "microsd",
   },
   {
     name: "1TB Portable SSD",
@@ -256,7 +249,6 @@ const storageProducts = [
       warranty: "3 Years",
     },
     inStock: true,
-    category: "portable",
   },
   {
     name: "HDD Mounting Bracket Kit",
@@ -288,7 +280,6 @@ const storageProducts = [
       warranty: "1 Year",
     },
     inStock: true,
-    category: "accessories",
   },
   {
     name: "SATA Data Cable (18 inch) - Pack of 2",
@@ -319,7 +310,6 @@ const storageProducts = [
       warranty: "1 Year",
     },
     inStock: true,
-    category: "accessories",
   },
 ];
 

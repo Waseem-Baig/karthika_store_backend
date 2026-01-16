@@ -67,11 +67,6 @@ const storageSchema = new mongoose.Schema(
       type: Boolean,
       default: true,
     },
-    category: {
-      type: String,
-      required: true,
-      enum: ["hdd", "ssd", "microsd", "portable", "accessories"],
-    },
     pdfUrl: {
       type: String,
       default: "",

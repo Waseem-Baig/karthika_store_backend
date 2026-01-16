@@ -37,13 +37,10 @@ const recorderSchema = new mongoose.Schema(
       of: String,
       default: {},
     },
-    category: {
+    brand: {
       type: String,
-      required: [true, "Please add a category"],
-      enum: {
-        values: ["nvr", "dvr", "hybrid", "tribrid", "other"],
-        message: "{VALUE} is not a valid category",
-      },
+      required: [true, "Please add a brand name"],
+      trim: true,
     },
     channels: {
       type: Number,

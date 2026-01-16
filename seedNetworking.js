@@ -30,7 +30,7 @@ const networkingProducts = [
       mounting: "Desktop/Wall",
     },
     inStock: true,
-    category: "poe-switch",
+    brand: "Ubiquiti",
   },
   {
     name: "16-Port PoE Switch (250W)",
@@ -59,7 +59,7 @@ const networkingProducts = [
       mounting: "Desktop/Rack",
     },
     inStock: true,
-    category: "poe-switch",
+    brand: "Cisco",
   },
   {
     name: "24-Port PoE Switch (400W)",
@@ -88,7 +88,7 @@ const networkingProducts = [
       mounting: "19-inch Rack",
     },
     inStock: true,
-    category: "poe-switch",
+    brand: "Netgear",
   },
   {
     name: "5-Port Desktop PoE Switch (60W)",
@@ -117,7 +117,7 @@ const networkingProducts = [
       mounting: "Desktop",
     },
     inStock: true,
-    category: "poe-switch",
+    brand: "Tenda",
   },
   {
     name: "PoE Injector Single Port (30W)",
@@ -146,7 +146,7 @@ const networkingProducts = [
       mounting: "Desktop",
     },
     inStock: true,
-    category: "injector",
+    brand: "Ubiquiti",
   },
   {
     name: "PoE Extender (100m range)",
@@ -175,7 +175,7 @@ const networkingProducts = [
       mounting: "Pole/Wall",
     },
     inStock: true,
-    category: "extender",
+    brand: "D-Link",
   },
   {
     name: "4-Port PoE Injector Hub (120W)",
@@ -204,7 +204,7 @@ const networkingProducts = [
       mounting: "Rack/Desktop",
     },
     inStock: true,
-    category: "injector",
+    brand: "TRENDnet",
   },
   {
     name: "PoE Splitter (5V/12V)",
@@ -232,7 +232,7 @@ const networkingProducts = [
       mounting: "N/A",
     },
     inStock: true,
-    category: "splitter",
+    brand: "TP-Link",
   },
   {
     name: "Outdoor PoE Switch 8-Port (150W)",
@@ -260,7 +260,7 @@ const networkingProducts = [
       mounting: "DIN Rail/Pole",
     },
     inStock: true,
-    category: "poe-switch",
+    brand: "Hikvision",
   },
   {
     name: "PoE Tester & Detector",
@@ -289,7 +289,7 @@ const networkingProducts = [
       mounting: "N/A",
     },
     inStock: true,
-    category: "accessories",
+    brand: "Klein Tools",
   },
 ];
 

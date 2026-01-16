@@ -6,13 +6,13 @@ const mongoose = require("mongoose");
 // @access  Public
 exports.getRecorders = async (req, res) => {
   try {
-    const { category, minPrice, maxPrice, inStock, sort, channels } = req.query;
+    const { brand, minPrice, maxPrice, inStock, sort, channels } = req.query;
 
     // Build query
     let query = {};
 
-    if (category) {
-      query.category = category;
+    if (brand) {
+      query.brand = brand;
     }
 
     if (minPrice || maxPrice) {
